@@ -1,8 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { AppareilService } from './services/appareil.service';
-import { Observable } from 'rxjs-compat/Observable/';
 import 'rxjs-compat/add/observable/interval';
 import { Subscription } from 'rxjs-compat/Subscription';
+import { Observable } from 'rxjs-compat/Observable';
 
 
 @Component({
