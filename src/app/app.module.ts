@@ -18,7 +18,7 @@ import { EditAppareilComponentComponent } from './edit-appareil-component/edit-a
 import { UserService } from './services/User.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'appareils', canActivate: [AuthGuard], component: AppareilViewComponent },
@@ -50,6 +50,7 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
 ],
   providers: [
